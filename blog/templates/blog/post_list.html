@@ -5,5 +5,10 @@
    <body>
     <p>Привет, пидор!</p>
 	<p>Ты такой никчемный, что этот сайт в сравнении с тобой идеален</p>
+   {% for post in posts %}
+   published: {{ post.published_date }}
+   {{ post.title }}
+   {{ post.text|linebreaksbr }}
+   {% endfor %}
    </body>
 </html>	
