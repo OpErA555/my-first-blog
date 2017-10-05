@@ -3,12 +3,12 @@
     <title>PornoHub</title>
    </head>
    <body>
-    <p>Привет, пидор!</p>
-	<p>Ты такой никчемный, что этот сайт в сравнении с тобой идеален</p>
-   {% for post in posts %}
-   published: {{ post.published_date }}
-   {{ post.title }}
-   {{ post.text|linebreaksbr }}
-   {% endfor %}
+    <H1>Привет, пидор!</H1>
+	<H2>Ты такой никчемный, что этот сайт в сравнении с тобой идеален</H2>
+   <FRAMESET BORDER=3>{% for post in posts %}
+   <b>Опубликовано: {{ post.published_date }} </b>
+   <H1>{{ post.title }}</H1>
+   <H3>{{ post.text|linebreaksbr }}</H3>
+   {% endfor %}</FRAMESET>
    </body>
 </html>	
